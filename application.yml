@@ -5,7 +5,7 @@ itemsharing.greeting: "Hello World"
 eureka:
   instance:
     # Necessary for Docker as it doesn't have DNS entries
-    perfer-ip-address: true
+    prefer-ip-address: true
   client:
     serviceUrl:
       defaultZone: http://192.168.0.107:8761/eureka/
