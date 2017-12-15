@@ -1,14 +1,7 @@
-# Reached from all urls.
-
-itemsharing.greeting: "Hello World"
-
 eureka:
   instance:
     # Necessary for Docker as it doesn't have DNS entries
     prefer-ip-address: true
-    ip-address: "${HOST}" # above isn't fixed by docker... How do I tell this that it is running from
-    # inside a docker image without hardcoding his ip. This is the same issue, but the solution seems hacky
-    # https://github.com/spring-cloud/spring-cloud-netflix/issues/432
   client:
     serviceUrl:
       defaultZone: http://192.168.0.107:8761/eureka/

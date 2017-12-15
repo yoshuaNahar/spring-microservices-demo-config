@@ -1,4 +1,5 @@
-# Reached from url: http://localhost:8888/userservice/default
+server:
+  port: 8081
 
 spring:
   jpa:
@@ -20,6 +21,3 @@ spring:
 security:
   basic:
     enabled: false
-
-server:
-  port: 8081
